@@ -1,10 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
-
-
 
 #TÍTULO{
     width: 100%;
@@ -13,25 +11,55 @@
     margin: 0 auto;
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: center; 
-    align-items: center;
-    display: flex;
-    bottom: 20px;
+    text-align: center;
     position: relative;
-    
 }
+
 #SUBTÍTULO{
-    height: 0 auto;
-    color: #000;
+    color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: center; 
-    align-items: center;
-    display: flex;
-    position: relative;
+    align-items: bottom;
+    text-align: center;
 }
-#caixa{
-    width: 500px;
-    height: 450px;
-    border: 2px solid black;
+
+.buscar{
+    width: 100%;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px black;
+    cursor: pointer;
+}
+
+.cabeçalho{
+    height: 100%; padding: 60px
+}
+
+section.formulario{
+    flex-direction: column;
+}
+
+section.formulario label{
+    display: block;
+    width: 100%;
+    padding: 0 auto;
+    height: auto;
+}
+
+section.formulario input.txt{
+    width: 100%;
+    height: 30px;
     margin: 0 auto;
+}
+
+fieldset{
+    padding: 20px 60px;
+}
+
+.center {
+    width: 30%;
+    margin: 60px auto; 
 }

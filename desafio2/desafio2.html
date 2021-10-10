@@ -9,14 +9,41 @@
 </head>
 <body>
     <header>
-        <h1 id="TÍTULO">ME ACHA!</h1>
-        <h4 id="SUBTÍTULO">ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h4>
+        <div id="TÍTULO">
+            <div class="cabeçalho">
+                <h1>ME ACHA!</h1>
+                <h4 id="SUBTÍTULO">ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h4>
+            </div>
+        </div>
     </header>
     <main>
-        <div id="caixa">
-            
+        <div href=# class="center">
+            <section class="formulario">
+                <form method="GET" name="cadastro"> 
+                  <fieldset>
+                    <legend></legend>
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="text" name="cep" value="" class="txt"/>
+
+                    <label for="rua">RUA</label> 
+                    <input id="rua" type="text" name="rua" value="" class="txt"/>
+
+                    <label for="bairro">BAIRRO</label>
+                    <input id="bairro" type="text" name="bairro" value="" class="txt"/>
+
+                    <label for="cidade">CIDADE</label>
+                    <input id="cidade" type="text" name="cidade" value="" class="txt"/>
+
+                    <label for="estado">ESTADO</label>
+                    <input id="estado" type="text" name="estado" value="" class="txt"/>
+
+                    <input type="submit" name="buscardados" value="BUSCAR" class="buscar"></input>
+                 </fieldset>
+                </form>
+             </section>   
         </div>
     </main>
-    <footer></footer>
+    <footer>
+    </footer>
 </body>
 </html>
