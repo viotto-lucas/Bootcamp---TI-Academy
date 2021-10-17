@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
+    <title>Desafio 2</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#TÍTULO{
+    width: 100%;
+    height: 200px;
+    background:linear-gradient(to left, #2196F3, #3D5AFE, #0D47A1);
+    margin: 0 auto;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+#SUBTÍTULO{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: bottom;
+    text-align: center;
+}
+
+.buscar{
+    width: 100%;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px black;
+    cursor: pointer;
+}
+
+.cabeçalho{
+    height: 100%; padding: 60px
+}
+
+section.formulario{
+    flex-direction: column;
+}
+
+section.formulario label{
+    display: block;
+    width: 100%;
+    padding: 0 auto;
+    height: auto;
+}
+
+section.formulario input.txt{
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+fieldset{
+    padding: 20px 60px;
+}
+
+.center {
+    width: 30%;
+    margin: 60px auto; 
+}
+
+.icons-list{
+    font-size: 4rem !important;
+    color: #2196F3;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+</style>
+<body>
+    <header>
+        <div id="TÍTULO">
+            <div class="cabeçalho">
+                <h1>ME ACHA!</h1>
+                <h4 id="SUBTÍTULO">ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h4>
+                <span class="material-icons icons-list">
+                    travel_explore
+                </span>
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <div href=# class="center">
+            <section class="formulario">
+                <form method="GET" name="cadastro"> 
+                  <fieldset>
+                    <legend></legend>
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="text" name="cep" value="" class="txt"/>
+
+                    <label for="rua">RUA</label> 
+                    <input id="rua" type="text" name="rua" value="" class="txt"/>
+
+                    <label for="bairro">BAIRRO</label>
+                    <input id="bairro" type="text" name="bairro" value="" class="txt"/>
+
+                    <label for="cidade">CIDADE</label>
+                    <input id="cidade" type="text" name="cidade" value="" class="txt"/>
+
+                    <label for="estado">ESTADO</label>
+                    <input id="estado" type="text" name="estado" value="" class="txt"/>
+
+                    <input type="submit" name="buscardados" value="BUSCAR" class="buscar"></input>
+                 </fieldset>
+                </form>
+             </section>   
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
